@@ -3,13 +3,15 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 :root{
-   --background: #ffffff;
-   --black:#0a0b10;
-   --purple:#1d4ed8;
-   --pink:#93c5fd;
+   --background: #f4f3ff;
+   --black:#0f172a;
+   --purple:#6d28d9;
+   --pink:#c084fc;
    --white:#fff;
-   --nav:#1e40af;
-   --nav2:#1e3a8a;
+   --nav:#312e81;
+   --nav2:#334155;
+   --text-muted:#64748b;
+   --text-on-dark:#dbeafe;
 }
 
 
@@ -28,7 +30,7 @@ html{
     html,
     a {
         font-family: 'Poppins', sans-serif;
-            }
+    }
     body {
 
         margin:0;
@@ -47,6 +49,7 @@ html{
     h6 {
         margin:0;
         padding:0;
+        font-family: 'Raleway', sans-serif;
     }
     a {
 
