@@ -46,11 +46,13 @@ const PinkBlob = styled.div`
   right: 0;
   top: calc(5rem + 5vw);
   z-index: 6;
+  filter: hue-rotate(165deg) saturate(120%);
 `;
 const PurpleBlob = styled.div`
   width: calc(10% + 10vw);
   position: absolute;
   right: 0;
+  filter: hue-rotate(140deg) saturate(125%);
 `;
 const WhiteBlob = styled.div`
   width: calc(20% + 20vw);
