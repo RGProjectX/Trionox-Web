@@ -47,13 +47,13 @@ const Footer = () => {
   return (
     <FOOTER>
       <LeftText>
-        © 2021 Built and Design by{" "}
+        © 2026 Built and Design by{" "}
         <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          @CodeBucks
+          @Trionox
         </a>
       </LeftText>
       <RightText>
-        Reach out to me via 😉
+        Reach out to us via 😉
         <a href="https://twitter.com/code_bucks">
           <img src={Twitter} alt="Twitter" />
         </a>

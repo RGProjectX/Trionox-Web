@@ -4,6 +4,8 @@ import Twitter from "../../assets/twitter-square-brands.svg";
 import Instagram from "../../assets/instagram-square-brands.svg";
 import styled from "styled-components";
 
+const COMPANY_EMAIL = "connect@trionox.com";
+
 const ContactSection = styled.section`
   width: 100vw;
   padding: calc(2.5rem + 2.5vw) 0;
@@ -125,6 +127,21 @@ const Row = styled.div`
   }
 `;
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const name = data.get("name") || "Website visitor";
+    const email = data.get("email") || "";
+    const message = data.get("message") || "";
+
+    const subject = `New enquiry from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+    window.location.href = `mailto:${COMPANY_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <ContactSection id="contact">
       <Title>Get in touch</Title>
@@ -144,7 +161,7 @@ const Contact = () => {
           <img src={Instagram} alt="Instagram" />
         </a>
       </Icons>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Row>
           <input name="name" type="text" placeholder="your name" />
           <input
@@ -154,20 +171,14 @@ const Contact = () => {
           />
         </Row>
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="2"
           placeholder="your message"
         ></textarea>
         <div style={{ margin: "0 auto" }}>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
-            Submit
-          </button>
+          <button type="submit">Submit</button>
         </div>
       </Form>
     </ContactSection>

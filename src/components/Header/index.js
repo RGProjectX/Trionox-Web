@@ -33,7 +33,7 @@ const Logo = styled.a`
 `;
 
 const Nav = styled.nav`
-  width: 25rem;
+  width: 34rem;
   max-width: 40rem;
   display: flex;
   align-items: center;
@@ -234,8 +234,8 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <img src={logo} alt="Trionox" />
+        <h3>Trionox</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
@@ -246,6 +246,9 @@ const Header = () => {
         </a>
         <a href="#services" onClick={(e) => scrollUp("services", e)}>
           Services
+        </a>
+        <a href="#capabilities" onClick={(e) => scrollUp("capabilities", e)}>
+          Capabilities
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           <Button>Contact Us</Button>
@@ -263,6 +266,9 @@ const Header = () => {
         </a>
         <a href="#services" onClick={(e) => handleClick("services", e)}>
           Services
+        </a>
+        <a href="#capabilities" onClick={(e) => handleClick("capabilities", e)}>
+          Capabilities
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
           <Button>Contact Us</Button>

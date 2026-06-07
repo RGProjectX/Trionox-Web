@@ -193,9 +193,9 @@ const HeroSection = () => {
             <Circle />
             <span>We Build Web</span>
           </Topic>
-          <Title>Transforming your digital presence</Title>
+          <Title>Building Digital Products That Create Real Business Growth</Title>
           <SubText>
-            we help fast growing companies build award winning websites
+            At Trinox, we partner with startups, growing businesses, and enterprises to design, develop, and scale digital products that solve real-world challenges.
           </SubText>
           <CTA>
             Get in touch &nbsp;
